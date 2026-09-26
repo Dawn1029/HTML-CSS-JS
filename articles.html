@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>博客文章 · 尹晓晓的个人博客与作品商城</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="articles">
+
+  <header class="site-header">
+    <div class="navbar">
+      <a href="index.html" class="logo"><span class="logo-mark">尹</span>尹晓晓的小站</a>
+      <button class="nav-toggle" aria-label="打开菜单"><span></span><span></span><span></span></button>
+      <nav class="nav-menu">
+        <a href="index.html">首页</a>
+        <a href="about.html">关于我</a>
+        <a href="articles.html">博客</a>
+        <a href="works.html">作品</a>
+        <a href="messages.html">留言</a>
+        <a href="cart.html" class="cart-link">购物车<span class="cart-badge" id="cart-count">0</span></a>
+        <span id="nav-auth"></span>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <h1>博客文章</h1>
+    <div class="breadcrumb"><a href="index.html">首页</a> / 博客</div>
+  </section>
+
+  <main class="container page-wrap">
+
+    <!-- 标签筛选栏 -->
+    <div class="filter-bar" id="tag-filter">
+      <button class="filter-btn active" data-tag="全部">全部</button>
+      <button class="filter-btn" data-tag="测试基础">测试基础</button>
+      <button class="filter-btn" data-tag="自动化测试">自动化测试</button>
+      <button class="filter-btn" data-tag="测试工具">测试工具</button>
+      <button class="filter-btn" data-tag="性能安全">性能安全</button>
+    </div>
+
+    <!-- 文章卡片列表（jQuery 动态渲染） -->
+    <div class="card-grid" id="article-grid"></div>
+
+    <!-- 空状态：筛选无结果 -->
+    <div class="empty-state hidden" id="article-empty">
+      <div class="empty-icon">📭</div>
+      <h3>该分类下暂无文章</h3>
+      <p>换个标签看看吧，后续会持续更新。</p>
+      <button class="btn btn-primary" id="empty-reset">查看全部文章</button>
+    </div>
+
+    <!-- 加载更多 -->
+    <div class="load-more-wrap" id="load-more-wrap">
+      <button class="btn btn-outline" id="load-more">加载更多 ↓</button>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">尹晓晓的小站</div>
+        <div class="footer-copy">© 2026 尹晓晓 · 个人博客与作品商城 · 纯前端学习实践项目</div>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://juejin.cn" target="_blank" rel="noopener">掘金</a>
+        <a href="https://www.zhihu.com" target="_blank" rel="noopener">知乎</a>
+        <a href="contact.html">联系我</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" title="回到顶部" aria-label="回到顶部">↑</button>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/cards.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/articles.js"></script>
+</body>
+</html>

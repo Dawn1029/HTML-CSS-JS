@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>技能详情 · 尹晓晓的个人博客与作品商城</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="skills">
+
+  <header class="site-header">
+    <div class="navbar">
+      <a href="index.html" class="logo"><span class="logo-mark">尹</span>尹晓晓的小站</a>
+      <button class="nav-toggle" aria-label="打开菜单"><span></span><span></span><span></span></button>
+      <nav class="nav-menu">
+        <a href="index.html">首页</a>
+        <a href="about.html">关于我</a>
+        <a href="articles.html">博客</a>
+        <a href="works.html">作品</a>
+        <a href="messages.html">留言</a>
+        <a href="cart.html" class="cart-link">购物车<span class="cart-badge" id="cart-count">0</span></a>
+        <span id="nav-auth"></span>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <h1>技能详情</h1>
+    <div class="breadcrumb"><a href="index.html">首页</a> / <a href="about.html">关于我</a> / 技能详情</div>
+  </section>
+
+  <main class="container page-wrap">
+    <div class="narrow-wrap">
+      <!-- 技能分组由 skills.js 依据 SKILLS 数据动态渲染 -->
+      <div id="skills-groups"></div>
+
+      <div class="block-card text-center">
+        <p class="mb-0">除了技术能力，我也注重沟通协作与质量意识，喜欢和团队一起把每一个缺陷都闭环到位。</p>
+        <a href="projects.html" class="btn btn-primary">查看我的项目经历 →</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">尹晓晓的小站</div>
+        <div class="footer-copy">© 2026 尹晓晓 · 个人博客与作品商城 · 纯前端学习实践项目</div>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://juejin.cn" target="_blank" rel="noopener">掘金</a>
+        <a href="https://www.zhihu.com" target="_blank" rel="noopener">知乎</a>
+        <a href="contact.html">联系我</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" title="回到顶部" aria-label="回到顶部">↑</button>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/skills.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文章详情 · 尹晓晓的个人博客与作品商城</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="article">
+
+  <header class="site-header">
+    <div class="navbar">
+      <a href="index.html" class="logo"><span class="logo-mark">尹</span>尹晓晓的小站</a>
+      <button class="nav-toggle" aria-label="打开菜单"><span></span><span></span><span></span></button>
+      <nav class="nav-menu">
+        <a href="index.html">首页</a>
+        <a href="about.html">关于我</a>
+        <a href="articles.html">博客</a>
+        <a href="works.html">作品</a>
+        <a href="messages.html">留言</a>
+        <a href="cart.html" class="cart-link">购物车<span class="cart-badge" id="cart-count">0</span></a>
+        <span id="nav-auth"></span>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <h1>文章详情</h1>
+    <div class="breadcrumb"><a href="index.html">首页</a> / <a href="articles.html">博客</a> / 文章详情</div>
+  </section>
+
+  <main class="container page-wrap">
+    <div class="article-wrap">
+      <a href="articles.html" class="btn btn-outline btn-sm back-link">← 返回文章列表</a>
+
+      <!-- 文章内容由 article.js 根据 URL 参数 ?id= 动态渲染 -->
+      <article class="article-card" id="article-card"></article>
+
+      <!-- 上一篇 / 下一篇 -->
+      <nav class="article-nav" id="article-nav"></nav>
+
+      <div class="text-center">
+        <button class="btn btn-outline btn-sm mt-3" id="share-btn">🔗 分享文章（模拟）</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">尹晓晓的小站</div>
+        <div class="footer-copy">© 2026 尹晓晓 · 个人博客与作品商城 · 纯前端学习实践项目</div>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://juejin.cn" target="_blank" rel="noopener">掘金</a>
+        <a href="https://www.zhihu.com" target="_blank" rel="noopener">知乎</a>
+        <a href="contact.html">联系我</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" title="回到顶部" aria-label="回到顶部">↑</button>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/article.js"></script>
+</body>
+</html>
